@@ -1,11 +1,44 @@
 import { CssBaseline } from '@mui/material'
-// import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom'
+import { Routes, Route, Link } from 'react-router-dom'
+import {
+	Navbar,
+	Profile,
+	Movies,
+	MovieInformation,
+	Actors,
+} from '/src/components/index'
+
+// import useStyles from './styles'
 
 function App() {
 	return (
-		<div className='App'>
+		<div>
 			<CssBaseline />
-			<h1>Welcome to CinemaNow!</h1>
+			<Navbar />
+			<main>
+				<Routes>
+					<Route
+						exact
+						path='/'
+						element={<Movies />}
+					/>
+					<Route
+						exact
+						path='/movie/:id'
+						element={<MovieInformation />}
+					/>
+					<Route
+						exact
+						path='/actor/:id'
+						element={<Actors />}
+					/>
+					<Route
+						exact
+						path='/profile/:id'
+						element={<Profile />}
+					/>
+				</Routes>
+			</main>
 		</div>
 	)
 }
