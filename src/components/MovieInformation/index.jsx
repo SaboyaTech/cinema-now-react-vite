@@ -1,4 +1,8 @@
 const MovieInformation = () => {
-	return <div>Movie Information</div>
+	return (
+		<div>
+			<h1>Movie Information</h1>
+		</div>
+	)
 }
 export default MovieInformation

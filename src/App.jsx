@@ -8,11 +8,13 @@ import {
 	Actors,
 } from '/src/components/index'
 
-// import useStyles from './styles'
+import useStyles from './styles'
 
 function App() {
+	const { classes } = useStyles()
+
 	return (
-		<div>
+		<div className={classes.root}>
 			<CssBaseline />
 			<Navbar />
 			<main>

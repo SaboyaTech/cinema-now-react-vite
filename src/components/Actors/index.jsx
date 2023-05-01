@@ -1,4 +1,8 @@
 const Actors = () => {
-	return <div>Actors</div>
+	return (
+		<div>
+			<h1>Actors</h1>
+		</div>
+	)
 }
 export default Actors
