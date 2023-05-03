@@ -17,7 +17,8 @@ function App() {
 		<div className={classes.root}>
 			<CssBaseline />
 			<Navbar />
-			<main>
+			<main className={classes.content}>
+				<div className={classes.toolbar} />
 				<Routes>
 					<Route
 						exact
